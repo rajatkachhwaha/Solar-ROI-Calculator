@@ -1,0 +1,66 @@
+<?php
+session_start();
+//require("database.php");
+//include("header.php");
+?>
+<!DOCTYPE html>
+
+<html>
+<head> <title> Solar Panel ROI Calculator </title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.slidepanel.setup.js"></script>
+<script type="text/javascript" src="scripts/jquery-ui-1.7.2.custom.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.tabs.setup.js"></script>
+</head>
+
+<body>
+
+<header> <img src="./images2/logo.jpg" class="logo"> <h1>Solar Panel - Return On Investment Calculator</h1></header> <hr>
+<div class="container clearfix">
+	<div class="left">
+		<h3>Why use solar panels ?</h3>
+		<p>Solar energy is a resource that is not only sustainable for energy consumption, it is indefinitely renewable(at least until the sun runs out in billions of years).Solar energy is free, does not cause pollution and can be used in remote areas.</p>
+		<p>Solar power beats many other good and highly recommended investment options.If you want to invest for a better retirement, college money for your kids, or simply to make the most of your money... for whatever future use you find most enticing, you should really be considering solar. </p>
+		<p>Our solar calculator can help determine the best solar kit for you. We can even calculate your return on investment.</p>
+		<p>you can find out more about Solar Panels here:</p>
+		<a href="http://costofsolar.com/solar-panels-cost-less-grid-electricity/" target="_blank">Solar panels cost less than grid electricity</a>
+	</div>
+	<div class="right">
+	<h3> Login or Sign Up below to Calculate ROI </h3><hr><br>
+	        <form action="./php/login.php" method="post">
+          <fieldset>
+            <legend>Current User Login</legend>
+            <label style="display:inline-block ; width:230px; margin-top:10px" for="username">Username:
+              <input type="text" required name="loginid" id="username" value="" />
+            </label>&nbsp;
+            <label style="display:inline-block;width:230px; margin-top:10px" for="password">Password:
+              <input type="password" required name="pass" id="password" value="" />
+            </label>
+            <p>
+              <input type="submit" name="submit" id="submit" value="Login" />
+            
+            </p>
+          </fieldset>
+        </form>
+		<br>
+		<form action="./php/signup.php" method="post">
+          <fieldset>
+            <legend>New User Sign Up</legend>
+            <label style="display:inline-block ; width:230px; margin-top:10px" for="email">Email:
+              <input type="email" required name="email" placeholder="Enter your email id here" id="email" value="" />
+            </label>&nbsp;
+            <label style="display:inline-block;width:230px; margin-top:10px" for="password">Password:
+              <input type="password" required name="pass" placeholder="Choose your password" id="password" value="" />
+            </label>
+            <p>
+              <input type="submit" name="submit" id="submit" value="Sign Up" />
+            
+            </p>
+          </fieldset>
+        </form>
+	</div>
+</div>
+
+</body>
+</html>

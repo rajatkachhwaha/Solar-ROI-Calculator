@@ -1,0 +1,80 @@
+body
+{
+width: 90%;
+margin: 0 auto;
+font-family: Arial;
+background-image:url("../images2/background.jpg") 
+}
+.logo{
+	height:150px;
+	display: inline-block;
+    vertical-align: middle;
+}
+header {
+    padding: 15px 0;
+}
+header h1 {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+	font-family: sans-serif;
+}
+*{
+box-sizing:border-box;
+}
+hr {color:black;}
+h2
+{
+font-family: Arial;
+color: black;
+text-align:left;
+font-weight: normal;}
+h3
+{
+font-family: arial;
+color: #333;
+text-align:justify;
+font-weight: 400;}
+.right,.left{
+	width: 49%;
+	background-color: rgba(211, 211, 211, 0.5);
+	padding: 25px;
+	border-radius: 5px;
+	height: 440px;
+	overflow: auto;
+	text-align:justify;
+}
+input[type=submit]{
+   border: 0;
+    border-radius: 3px;
+    background-color: #bbbbbb;
+    color: #333;
+    padding: 10px;
+    font-size: 16px;
+}
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+.container{
+	margin-bottom: 50px;
+}
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+label{
+	display: inline-block;
+	width: 330px;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Solar Panel ROI Calculator</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="imagetoolbar" content="no" />
+<link rel="stylesheet" href="styles/layout.css" type="text/css" />
+<!--<script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAF2wqqKgC41AFKvvGCMgDpVH6IlsGJ9wM&callback=initMap">
+    </script>-->
+<script src="http://mbostock.github.com/d3/d3.v2.js"></script>
+<script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.slidepanel.setup.js"></script>
+<script type="text/javascript" src="scripts/jquery-ui-1.7.2.custom.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.tabs.setup.js"></script>
+</head>
+<body>
+		<div class="wrapper col0">
+  <div id="topbar">
+    <div id="slidepanel">
+      <div class="topbox">
+        <h2>User Login</h2>
+        <form action="./php/login.php" method="post">
+          <fieldset>
+            <legend>User Login</legend>
+            <label for="username">Username:
+              <input type="text" required name="loginid" id="username" value="" />
+            </label>
+            <label for="password">Password:
+              <input type="password" required name="pass" id="password" value="" />
+            </label>
+            <label for="remember">
+              <input class="checkbox" type="checkbox" name="remember" id="remember" checked="checked" />
+              Remember me</label>
+            <p>
+              <input type="submit" name="submit" id="submit" value="Login" />
+              &nbsp;
+              <input type="reset" name="reset" id="reset" value="Reset" />
+            </p>
+          </fieldset>
+        </form>
+      </div>
+      <div class="topbox">
+        <h2>New User? Sign Up Here:</h2>
+        <form action="./php/signup.php" method="post">
+          <fieldset>
+            <legend>New User</legend>
+            <label for="email">Email:
+              <input type="email" required name="email" id="email" value="" />
+            </label>
+            <label for="password">Password:
+              <input type="password" required name="pass" id="password" value="" />
+            </label>
+            
+            <p>
+              <input type="submit" name="submit" id="submit" value="Sign Up"  />
+              &nbsp;
+              <input type="reset" name="reset" id="reset" value="Reset" />
+            </p>
+          </fieldset>
+        </form>
+      </div>
+           <div class="topbox last">
+       
+      </div>
+      <br class="clear" />
+    </div>
+    <div id="loginpanel">
+      <ul>
+        <li class="left">Click here to </li>
+        <li class="right" id="toggle"><a id="slideit" href="#slidepanel">&raquo; Login</a><a id="closeit" style="display: none;" href="#slidepanel">Close Panel</a></li>
+      </ul>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col1">
+  <div id="header">
+    <div id="logo">
+      <h1 class="title"><a href="#">Solar Panel ROI Calculator</a></h1>
+      <p>Save Energy . Anytime . Anywhere.</p>
+    </div>
+    <div class="fl_right">
+      <ul>
+        <li class="last"><a href="usergeo.html">User Geo</a></li>
+        <li><a href="#">Online Support</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <p>Phone: +1 978-421-5451 | Mail: plingara@cs.uml.com</p>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col2">
+  <div id="topnav">
+    <ul>
+     <li><a href="index.html">Home</a></li>
+	   <li class="active"><a href="roi.html">ROI</a></li>
+      <li><a href="ajax.html">Live Data</a></li>
+       <li><a href="videos.html">Videos</a></li>
+    </ul>
+  </div>
+</div>
+<div class="wrapper col6">
+  <div id="copyright" style="top:520px;">
+    <p class="fl_left">Copyright &copy; 2015 - All Rights Reserved - <a href="#">weblab.cs.uml.edu</a></p>
+    <p class="fl_right">Designed by <a href="http://www.cs.uml.edu/~plingara" title="Uml CS">Pavankumar</a></p>
+    <br class="clear" />
+  </div>
+</div>			
+
+	<!--<h4 style="position:absolute;top:200px;left:110px; float:left;">Solar Return On Investment, 5% Annual Power Rate Increase</h4>-->
+		<div class="left">
+	<h3> Please Login or Signup to Calculate your ROI on Solar Panels.</h3><hr>	</div>
+
+	<div class="right aGraph" id="graph" >
+	<h3>Solar Panel Investment Tip</h3>
+		<iframe width="420" height="345"
+src="http://www.youtube.com/embed/N5CpnY1UbyA">
+</iframe>
+	</div>
+
+
+	</body>
+</html>
